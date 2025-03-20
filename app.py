@@ -7,8 +7,8 @@ CORS(app)
 
 # Database connection configuration
 db_config = {
-    'user': 'root',             # Use your MySQL username (default is "root")
-    'password': '',             # Use your MySQL password (often blank for XAMPP)
+    'user': 'root',            
+    'password': '',             
     'host': 'localhost',
     'database': 'user_management'
 }
@@ -19,7 +19,7 @@ def get_db_connection():
 # Serve the frontend
 @app.route('/')
 def home():
-    return render_template('index.html')  # Serves the HTML file
+    return render_template('index.html') 
 
 # Get all users
 @app.route('/users', methods=['GET'])
